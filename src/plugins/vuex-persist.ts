@@ -1,5 +1,5 @@
-import VuexPersistence from 'vuex-persist';
-export default new VuexPersistence(options:{
-    storage: window.localStorage,
-    modules: []
-});
+import VuexPersistence from 'vuex-persist'
+export default new VuexPersistence({
+  storage: window.localStorage,
+  modules: [],
+})
