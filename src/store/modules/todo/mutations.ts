@@ -8,7 +8,7 @@ export const mutations: TodoMutationsTree = {
     state.todos = todos
   },
   uodateTodoStatus(state: TodoState, payLoad: Todo) {
-    const todo = state.todos.find(t => this.id === payLoad.id)
+    const todo = state.todos.find(t => t.id === payLoad.id)
     if (todo) {
       todo.done = !todo.done
     }
